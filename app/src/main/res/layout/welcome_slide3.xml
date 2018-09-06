@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/opengirl">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_ish">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="156dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            app:srcCompat="@mipmap/securitik_logo1" />
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="198dp"
+            android:text="@string/live"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="181dp"
+            android:text="Receive alerts that will contribute to a secure life from Securitic "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

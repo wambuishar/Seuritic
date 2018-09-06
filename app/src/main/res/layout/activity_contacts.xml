@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Contacts">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/con_toolbar"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:onClick="backPressed"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/arrow"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/em_contacts"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="addContact"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/add_new"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="#8c8c8c"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_marginStart="-40dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_gravity="center"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:id="@+id/hb1"
+                android:src="@mipmap/add"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/add_contact"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:text="@string/list_is_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:divider="#b6b6b6"
+            android:id="@+id/lv_contacts"
+            android:layout_below="@id/con_toolbar"
+            android:layout_above="@id/add_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

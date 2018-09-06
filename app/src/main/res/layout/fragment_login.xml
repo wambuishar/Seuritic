@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="#e64e4545"
+            android:textStyle="bold"
+            android:id="@+id/title_login"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:text="@string/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/et_login_email"
+                android:maxLength="100"
+                android:inputType="textEmailAddress"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/hint_email"
+                android:layout_marginBottom="4dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:maxLength="100"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:padding="16dp"
+                android:id="@+id/et_login_pass"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_password"
+                android:background="@android:drawable/editbox_background_normal"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="14dp"
+        android:padding="8dp"
+        android:id="@+id/tv_register"
+        android:text="@string/str_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp" />
+
+</LinearLayout>

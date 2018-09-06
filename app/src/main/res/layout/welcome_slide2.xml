@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/blackgirl"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_ish">
+
+
+        <ImageView
+
+            android:id="@+id/imageView5"
+            android:layout_width="222dp"
+            android:layout_height="138dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/securitik_logo1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="156dp"
+            android:fontFamily="serif"
+            android:text="Raise"
+            android:textColor="@color/red"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_above="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Alert"
+            android:textColor="@color/red"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="231dp"
+            android:fontFamily="serif"
+            android:text="Get help"
+            android:textColor="@color/red"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="133dp"
+            android:fontFamily="serif"
+            android:text="Press your power button 4 times to inform your friends family and securitik for an emergency"
+            android:textAlignment="center"
+            android:textColor="@color/bg_screen3"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
